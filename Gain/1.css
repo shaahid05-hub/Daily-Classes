@@ -1,0 +1,23 @@
+input{
+    border: none;
+    outline: none;
+    background-color: antiquewhite;
+}
+
+th{
+    padding: 5px;
+    color: gray;
+    font-weight: normal;
+}
+
+td{
+    font-size: 22.5px;
+}
+
+.box{
+    box-shadow:
+    2px 2px 5px rgba(0, 0, 0, 0.3),
+    -2px -2px 5px rgba(255, 255, 255, 0.5) 
+    
+}
+

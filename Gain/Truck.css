@@ -1,0 +1,47 @@
+.t1,.t2,.t3,.t4,.t5{
+    height: 100px;
+    font-size: 75px;
+}
+
+.container{
+    background-color: black;
+    width: 600px;
+}
+
+.container:hover .t1{
+    animation: animatesize 3s linear forwards;
+}
+
+.container:hover .t2{
+    animation: animatesize 3s ease forwards;
+}
+
+.container:hover .t3{
+    animation: animatesize 3s ease-in forwards;
+}
+
+.container:hover .t4{
+    animation: animatesize 3s ease-in-out forwards;
+
+}
+
+.container:hover .t5{
+    animation: animatesize 3s ease-out forwards;
+}
+
+@keyframes animatesize{
+    0%{
+        transform: translateX(0px);
+    }
+    50%{
+        transform: translateX(300px);
+        background-color: aqua;
+    }
+    100%{
+        transform: translateX(600px);
+        
+    }
+    
+}
+
+
