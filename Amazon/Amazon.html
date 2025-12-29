@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Amazon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <div class="HeaderLogo">
+            <img src="data:image/png;base64,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"
+                alt="HeaderLogo" width="150px" height="60px">
+        </div>
+        <div class="deliver">
+            <a href=""><div class="LocationLogo">
+                <i class="fa-solid fa-location-dot" style="color: #f2f2f3; font-size: 20px;margin-top: 15px;"></i>
+            </div>
+            <div class="LocationMatter">
+                <p style="margin-top: 5px; margin-left: -20px;">Deliver To</p>
+                <p style="font-size: 20px; margin-top: 0px;">India</p>
+            </div></a>
+        </div>
+
+        <div class="All">
+            <select name="" id="" class="All1" >
+                <option value="" style="text-align: center;">All</option>
+                <option value="" style="background-color: white;">All Departments</option>
+                <option value="" style="background-color: white;">All Departments</option>
+                <option value="" style="background-color: white;">Arts & Crafts</option>
+                <option value="" style="background-color: white;">Automotive</option>
+                <option value="" style="background-color: white;">Baby</option>
+                <option value="" style="background-color: white;">Beauty & Personal Care</option>
+                <option value="" style="background-color: white;">Books</option>
+                <option value="" style="background-color: white;">Boy's Fashion</option>
+                <option value="" style="background-color: white;">Computers</option>
+                <option value="" style="background-color: white;">Deals</option>
+                <option value="" style="background-color: white;">Digital Music</option>
+                <option value="" style="background-color: white;">Electronics</option>
+                <option value="" style="background-color: white;">Girl's fashion</option>
+                <option value="" style="background-color: white;">Health & Household</option>
+                <option value="" style="background-color: white;">Home & Kitchen</option>
+                <option value="" style="background-color: white;">Induatrial & Scientific</option>
+                <option value="" style="background-color: white;">Kindle Store</option>
+                <option value="" style="background-color: white;">Luggage</option>
+                <option value="" style="background-color: white;">Men's Fashion</option>
+                <option value="" style="background-color: white;">Movies & TV</option>
+                <option value="" style="background-color: white;">Music, CDs & Vinyl</option>
+                <option value="" style="background-color: white;">Pet Supplies</option>
+                <option value="" style="background-color: white;">Prime Video</option>
+                <option value="" style="background-color: white;">Software</option>
+                <option value="" style="background-color: white;">Sports & Outdoor</option>
+                <option value="" style="background-color: white;">Tools & Improvement</option>
+                <option value="" style="background-color: white;">Toys & Games</option>
+                <option value="" style="background-color: white;">Video Games</option>
+                <option value="" style="background-color: white;">Women's Fashion</option>
+            </select>
+            <input type="search" class="All2">
+            <div class="All3">
+                <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
+            </div>
+        </div>
+
+        <div class="HeaderLast">
+            <select name="" id="" style="font-size: 20px; background-color:  rgb(2, 75, 2); color: white;">
+            <option value="" >EN</option>
+            <option value="" >EN</option>
+
+        
+            </select>
+
+            <div style="margin-right: 15px;">
+                <p class="Account">Hello, sign in</p>
+                <p class="Account1">Account & Lists</p>
+                <select name="" id="" class="Select">
+                    <option value=""></option>
+                </select>
+            </div>
+
+            <div>
+                <p style="color: white;">Returns</p>
+                <p class="Orders">& Orders</p>
+            </div>
+
+            <div>
+                <p class="Cart"><i class="fa-solid fa-cart-arrow-down" style="color: #fafafa; font-size: 27.5px;"></i>Cart</p>
+            </div>
+        </div>
+    </header>
+
+    <section style="background-color: rgb(3, 105, 3)">
+        <div class="HeadSub">
+        <p>All</p>
+        <p>Today's Deals</p>
+        <p>Prime Video</p>
+        <p>Registry</p>
+        <p>Gift Cards</p>
+        <p>Customer Service</p>
+        <p>Sell</p>
+        </div>
+    </section>
+
+    <section style="height: 200px;">
+        <a href="https://www.amazon.com/b/?_encoding=UTF8&_encoding=UTF8&node=23634165011&ref_=pd_hp_d_hero_unk"><img src="https://m.media-amazon.com/images/I/81mLoEvjbEL._SX3000_.jpg" alt=""></a>
+    </section>
+
+    <section>
+        <div class="Parent">
+            <div class="card">
+                <p class="Para_H">Shop gifts by price</p>
+                <div class="SubCard">
+                    <a href="https://www.amazon.com/s?k=gifts&rh=p_36%3A-1000&_encoding=UTF8"><img src="https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2025/HOL/Homepage/QC/DQC/HOL25-Peak_10595_HP_DQC_Gifts-by-Price_under10_V1_1x_186x116._SY116_CB797242024_.jpg" alt=""></a>
+                    <a href="https://www.amazon.com/s?k=gifts&rh=p_36%3A-2500&_encoding=UTF8"><img src="https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2025/HOL/Homepage/QC/DQC/HOL25-Peak_10598_HP_DQC_Gifts-by-Price_under25_V1_1x_186x116._SY116_CB797581088_.jpg" alt=""></a>
+                </div>
+                <div class="SubCardMatter">
+                    <p style="margin-right: 130px;">Under $10</p>
+                    <p>Under 25$</p>
+                </div>
+                <div class="SubCard">
+                    <a href="https://www.amazon.com/s?k=gifts&rh=p_36%3A-5000&_encoding=UTF8"><img src="https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2025/HOL/Homepage/QC/DQC/HOL25-Peak_10601_HP_DQC_Gifts-by-Price_under50_V1_1x_186x116._SY116_CB797242024_.jpg" alt=""></a>
+                    <a href="https://www.amazon.com/gp/goldbox/?_encoding=UTF8&ref_=pd_hp_d_atf_unk"><img src="https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2025/HOL/Homepage/QC/DQC/HOL25-Peak_10599_HP_DQC_Gifts-by-PriceDeals_V1_1x_186x116._SY116_CB797242024_.jpg"></a>
+                </div>
+                <div class="SubCardMatter">
+                    <p style="margin-right: 130px;">Under $50</p>
+                    <p>Deals</p>
+                </div>
+                <a href="https://www.amazon.com/gp/goldbox/?_encoding=UTF8&ref_=pd_hp_d_atf_unk" class="a1"><p style="margin-left: 10px;">Discover More For Holiday</p></a>            
+            </div>
+            <div class="card">
+                <p class="Para_H">Shop gifts by recipient</p>
+                <div class="SubCard">
+                    <a href="https://www.amazon.com/s?k=gifts+for+him&_encoding=UTF8"><img src="https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2024/HOL/GW/QuadCard/HS2/HOL24_4480_HS2_DQC_2-2_ShopbyRecipient_For-Him_Nov_1H_1x_186x116._SY116_CB543392481_.jpg" alt=""></a>
+                    <a href="https://www.amazon.com/s?k=gifts+for+her&_encoding=UTF8"><img src="https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2024/HOL/GW/QuadCard/HS2/HOL24_4481_HS2_DQC_2-2_ShopbyRecipient_For-Her_Nov_1H_1x_186x116._SY116_CB543392481_.jpg" alt=""></a>
+                </div>
+                <div class="SubCardMatter">
+                    <p style="margin-right: 140px;">For Him</p>
+                    <p>For Her</p>
+                </div>
+                <div class="SubCard">
+                    <a href="https://www.amazon.com/s?k=gifts+for+kids&_encoding=UTF8"><img src="https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2024/HOL/GW/QuadCard/HS2/HOL24_4482_HS2_DQC_2-2_ShopbyRecipient_For-Kids_Nov_1H_1x_186x116._SY116_CB543392481_.jpg" alt=""></a>
+                    <a href="https://www.amazon.com/s?k=gifts+for+teens&_encoding=UTF8"><img src="https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2024/HOL/GW/QuadCard/HS2/HOL24_4483_HS2_DQC_2-2_ShopbyRecipient_For-Teens_Nov_1H_1x_186x116._SY116_CB543392481_.jpg"></a>
+                </div>
+                <div class="SubCardMatter">
+                    <p style="margin-right: 140px;">For Kids</p>
+                    <p>For Teens</p>
+                </div>
+                <a href="https://www.amazon.com/s?k=home&_encoding=UTF8" class="a1"><p style="margin-left: 10px;">Shop all Gifts</p></a>
+            </div>
+            <div class="card">
+                <p class="Para_H">Get your game on</p>
+                <div class="SubCard">
+                    <a href="https://www.amazon.com/s?k=gaming&_encoding=UTF8"><img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/Stores-Gaming/FinalGraphics/Fuji_Gaming_store_Dashboard_card_1x_EN._SY304_CB564799420_.jpg" alt=""></a>
+                </div>  
+                <a href="https://www.amazon.com/s?k=gaming&_encoding=UTF8" class="a1"><p style="margin-left: 10px; margin-top: 50px;">Shop gaming</p></a>
+            </div>
+            <div class="card">
+               <p class="Para_H">Shop for your home essentials</p>
+                <div class="SubCard">
+                    <a href="https://www.amazon.com/s?k=cleaning+tools&_encoding=UTF8"><img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAU2024Sept/CleaningTool_1x._SY116_CB563137408_.jpg" alt=""></a>
+                    <a href="https://www.amazon.com/s?k=home+storage&_encoding=UTF8"><img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAU2024Sept/HomeStorage_1x._SY116_CB563137408_.jpg" alt=""></a>
+                </div>
+                <div class="SubCardMatter">
+                    <p style="margin-right: 100px;">Cleaning Tools</p>
+                    <p>Home Storage</p>
+                </div>
+                <div class="SubCard">
+                    <a href="https://www.amazon.com/s?k=home+decor&_encoding=UTF8"><img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAU2024Sept/HomeDecor_1x._SY116_CB563137408_.jpg" alt=""></a>
+                    <a href="https://www.amazon.com/s?k=bedding&_encoding=UTF8"><img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAU2024Sept/Bedding_1x._SY116_CB563137408_.jpg"></a>
+                </div>
+                <div class="SubCardMatter">
+                    <p style="margin-right: 100px;">Home Decor</p>
+                    <p>Bedding</p>
+                </div>
+                <a href="https://www.amazon.com/s?k=home&_encoding=UTF8" class="a1"><p style="margin-left: 10px;">Discover more in home</p></a> 
+            </div>
+        </div>
+        <div class="Parent">
+            <div class="card">
+                <p class="Para_H">Shop gifts by price</p>
+                <div class="SubCard">
+                    <a href="https://www.amazon.com/s?k=gifts&rh=p_36%3A-1000&_encoding=UTF8"><img src="https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2025/HOL/Homepage/QC/DQC/HOL25-Peak_10595_HP_DQC_Gifts-by-Price_under10_V1_1x_186x116._SY116_CB797242024_.jpg" alt=""></a>
+                    <a href="https://www.amazon.com/s?k=gifts&rh=p_36%3A-2500&_encoding=UTF8"><img src="https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2025/HOL/Homepage/QC/DQC/HOL25-Peak_10598_HP_DQC_Gifts-by-Price_under25_V1_1x_186x116._SY116_CB797581088_.jpg" alt=""></a>
+                </div>
+                <div class="SubCardMatter">
+                    <p style="margin-right: 130px;">Under $10</p>
+                    <p>Under 25$</p>
+                </div>
+                <div class="SubCard">
+                    <a href="https://www.amazon.com/s?k=gifts&rh=p_36%3A-5000&_encoding=UTF8"><img src="https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2025/HOL/Homepage/QC/DQC/HOL25-Peak_10601_HP_DQC_Gifts-by-Price_under50_V1_1x_186x116._SY116_CB797242024_.jpg" alt=""></a>
+                    <a href="https://www.amazon.com/gp/goldbox/?_encoding=UTF8&ref_=pd_hp_d_atf_unk"><img src="https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2025/HOL/Homepage/QC/DQC/HOL25-Peak_10599_HP_DQC_Gifts-by-PriceDeals_V1_1x_186x116._SY116_CB797242024_.jpg"></a>
+                </div>
+                <div class="SubCardMatter">
+                    <p style="margin-right: 130px;">Under $50</p>
+                    <p>Deals</p>
+                </div>
+                <a href="https://www.amazon.com/gp/goldbox/?_encoding=UTF8&ref_=pd_hp_d_atf_unk" class="a1"><p style="margin-left: 10px;">Discover More For Holiday</p></a>            
+            </div>
+            <div class="card">
+                <p class="Para_H">Shop gifts by recipient</p>
+                <div class="SubCard">
+                    <a href="https://www.amazon.com/s?k=gifts+for+him&_encoding=UTF8"><img src="https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2024/HOL/GW/QuadCard/HS2/HOL24_4480_HS2_DQC_2-2_ShopbyRecipient_For-Him_Nov_1H_1x_186x116._SY116_CB543392481_.jpg" alt=""></a>
+                    <a href="https://www.amazon.com/s?k=gifts+for+her&_encoding=UTF8"><img src="https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2024/HOL/GW/QuadCard/HS2/HOL24_4481_HS2_DQC_2-2_ShopbyRecipient_For-Her_Nov_1H_1x_186x116._SY116_CB543392481_.jpg" alt=""></a>
+                </div>
+                <div class="SubCardMatter">
+                    <p style="margin-right: 140px;">For Him</p>
+                    <p>For Her</p>
+                </div>
+                <div class="SubCard">
+                    <a href="https://www.amazon.com/s?k=gifts+for+kids&_encoding=UTF8"><img src="https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2024/HOL/GW/QuadCard/HS2/HOL24_4482_HS2_DQC_2-2_ShopbyRecipient_For-Kids_Nov_1H_1x_186x116._SY116_CB543392481_.jpg" alt=""></a>
+                    <a href="https://www.amazon.com/s?k=gifts+for+teens&_encoding=UTF8"><img src="https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2024/HOL/GW/QuadCard/HS2/HOL24_4483_HS2_DQC_2-2_ShopbyRecipient_For-Teens_Nov_1H_1x_186x116._SY116_CB543392481_.jpg"></a>
+                </div>
+                <div class="SubCardMatter">
+                    <p style="margin-right: 140px;">For Kids</p>
+                    <p>For Teens</p>
+                </div>
+                <a href="https://www.amazon.com/s?k=home&_encoding=UTF8" class="a1"><p style="margin-left: 10px;">Shop all Gifts</p></a>
+            </div>
+            <div class="card">
+                <p class="Para_H">Get your game on</p>
+                <div class="SubCard">
+                    <a href="https://www.amazon.com/s?k=gaming&_encoding=UTF8"><img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/Stores-Gaming/FinalGraphics/Fuji_Gaming_store_Dashboard_card_1x_EN._SY304_CB564799420_.jpg" alt=""></a>
+                </div>  
+                <a href="https://www.amazon.com/s?k=gaming&_encoding=UTF8" class="a1"><p style="margin-left: 10px; margin-top: 50px;">Shop gaming</p></a>
+            </div>
+            <div class="card">
+               <p class="Para_H">Shop for your home essentials</p>
+                <div class="SubCard">
+                    <a href="https://www.amazon.com/s?k=cleaning+tools&_encoding=UTF8"><img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAU2024Sept/CleaningTool_1x._SY116_CB563137408_.jpg" alt=""></a>
+                    <a href="https://www.amazon.com/s?k=home+storage&_encoding=UTF8"><img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAU2024Sept/HomeStorage_1x._SY116_CB563137408_.jpg" alt=""></a>
+                </div>
+                <div class="SubCardMatter">
+                    <p style="margin-right: 100px;">Cleaning Tools</p>
+                    <p>Home Storage</p>
+                </div>
+                <div class="SubCard">
+                    <a href="https://www.amazon.com/s?k=home+decor&_encoding=UTF8"><img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAU2024Sept/HomeDecor_1x._SY116_CB563137408_.jpg" alt=""></a>
+                    <a href="https://www.amazon.com/s?k=bedding&_encoding=UTF8"><img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAU2024Sept/Bedding_1x._SY116_CB563137408_.jpg"></a>
+                </div>
+                <div class="SubCardMatter">
+                    <p style="margin-right: 100px;">Home Decor</p>
+                    <p>Bedding</p>
+                </div>
+                <a href="https://www.amazon.com/s?k=home&_encoding=UTF8" class="a1"><p style="margin-left: 10px;">Discover more in home</p></a> 
+            </div>
+        </div>
+    </section>
+
+
+    <marquee behavior="" direction="">
+        
+    </marquee>
+
+</body>
+
+</html>
