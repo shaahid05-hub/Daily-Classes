@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AcheiversIT</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./Pra.css">
+</head>
+
+<body>
+    <header style="display: flex; align-items: center; background-color: rgb(54, 55, 55); ">
+        <div style="width: 30%;">
+            <img src="https://www.achieversit.com/assets/images/AIT-white.jpg" alt="header logo">
+        </div>
+
+        <nav style="width: 70%; display: flex; justify-content: space-around; ">
+            <a href="" style=" color: aliceblue; text-decoration: none; font-size: 20px;">All Students</a>
+            <a href="" style=" color: aliceblue; text-decoration: none; font-size: 20px;">Placements</a>
+            <a href="" style=" color: aliceblue; text-decoration: none; font-size: 20px;">Internship</a>
+            <a href="" style=" color: aliceblue; text-decoration: none; font-size: 20px;">Existing Students</a>
+            <a href="" style=" color: aliceblue; text-decoration: none;font-size: 20px;">About Us</a>
+            <a href="" style=" color: aliceblue; text-decoration: none;font-size: 20px;">Reviews</a>
+            <a href="" style=" color: aliceblue; text-decoration: none;font-size: 20px;">Blogs</a>
+        </nav>
+    </header>
+
+    <section>
+        <img src="data:image/jpeg;base64,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"
+            alt="Banner">
+    </section>
+
+    <h1 style="font-weight: normal;">POPULAR CAREER ORIENTED COURSES</h1>
+
+    <section style="display: flex; justify-content: center ;">
+        <div style="width: 25%;">
+            <div>
+                <h2 style="font-weight: normal;">JAVA FULL STACK COURSE</h2>
+            </div>
+            <div>
+                <P>Java Full Stack Development is widely popular for building powerful, scalable, and enterprise-level
+                    applications. Its combination</P>
+            </div>
+            <div>
+                <h4 style="font-style: italic; font-weight: normal;">Reviews</h4>
+            </div>
+        </div>
+        <div style="width: 25%;">
+            <div>
+                <h2 style="font-weight: normal;">PYTHON FULL STACK COURSE</h2>
+            </div>
+            <div>
+                <P>Java Full Stack Development is widely popular for building powerful, scalable, and enterprise-level
+                    applications. Its combination</P>
+            </div>
+            <div>
+                <h4 style="font-style: italic; font-weight: normal;">Reviews</h4>
+            </div>
+        </div>
+        <div style="width: 25%;">
+            <div>
+                <h2 style="font-weight: normal;">DATA SCIENCE COURSE</h2>
+            </div>
+            <div>
+                <P>Java Full Stack Development is widely popular for building powerful, scalable, and enterprise-level
+                    applications. Its combination</P>
+            </div>
+            <div>
+                <h4 style="font-style: italic; font-weight: normal;">Reviews</h4>
+            </div>
+        </div>
+        <div style="width: 25%;">
+            <div>
+                <h2 style="font-weight: normal;">DATA ANALYTICS COURSE</h2>
+            </div>
+            <div>
+                <P>Java Full Stack Development is widely popular for building powerful, scalable, and enterprise-level
+                    applications. Its combination</P>
+            </div>
+            <div>
+                <h4 style="font-style: italic; font-weight: normal;">Reviews</h4>
+            </div>
+        </div>
+    </section>
+
+    <section style="display: flex; justify-content: space-evenly ;">
+        <div style="width: 25%;">
+            <div>
+                <h2 style="font-weight: normal;">MEAN STACK DEVELOPMENT COURSE</h2>
+            </div>
+            <div>
+                <P>Java Full Stack Development is widely popular for building powerful, scalable, and enterprise-level
+                    applications. Its combination</P>
+            </div>
+            <div>
+                <h4 style="font-style: italic; font-weight: normal;">Reviews</h4>
+            </div>
+        </div>
+        <div style="width: 25%;">
+            <div>
+                <h2 style="font-weight: normal;">MERN STACK DEVELOPMENT COURSE</h2>
+            </div>
+            <div>
+                <P>Java Full Stack Development is widely popular for building powerful, scalable, and enterprise-level
+                    applications. Its combination</P>
+            </div>
+            <div>
+                <h4 style="font-style: italic; font-weight: normal;">Reviews</h4>
+            </div>
+        </div>
+        <div style="width: 25%;">
+            <div>
+                <h2 style="font-weight: normal;">WEB DEVELOPMENT COURSE</h2>
+            </div>
+            <div>
+                <P>Java Full Stack Development is widely popular for building powerful, scalable, and enterprise-level
+                    applications. Its combination</P>
+            </div>
+            <div>
+                <h4 style="font-style: italic; font-weight: normal;">Reviews</h4>
+            </div>
+        </div>
+        <div style="width: 25%;">
+            <div>
+                <h2 style="font-weight: normal;">DIGITAL MARKETING COURSE</h2>
+            </div>
+            <div>
+                <P>Java Full Stack Development is widely popular for building powerful, scalable, and enterprise-level
+                    applications. Its combination</P>
+            </div>
+            <div>
+                <h4 style="font-style: italic; font-weight: normal;">Reviews</h4>
+            </div>
+        </div>
+    </section>
+
+    <h1 style="font-weight: normal;">TRENDING COURSES</h1>
+    <section style="display: flex; justify-content: space-evenly ;">
+        <div style="width: 25%;">
+            <div>
+                <h2 style="font-weight: normal;">ANGULAR DEVELOPMENT COURSE</h2>
+            </div>
+            <div>
+                <P>Java Full Stack Development is widely popular for building powerful, scalable, and enterprise-level
+                    applications. Its combination</P>
+            </div>
+            <div>
+                <h4 style="font-style: italic; font-weight: normal;">Reviews</h4>
+            </div>
+        </div>
+        <div style="width: 25%;">
+            <div>
+                <h2 style="font-weight: normal;">REACT DEVELOPMENT COURSE</h2>
+            </div>
+            <div>
+                <P>Java Full Stack Development is widely popular for building powerful, scalable, and enterprise-level
+                    applications. Its combination</P>
+            </div>
+            <div>
+                <h4 style="font-style: italic; font-weight: normal;">Reviews</h4>
+            </div>
+        </div>
+        <div style="width: 25%;">
+            <div>
+                <h2 style="font-weight: normal;">MEAN STACK DEVELOPMENT COURSE</h2>
+            </div>
+            <div>
+                <P>Java Full Stack Development is widely popular for building powerful, scalable, and enterprise-level
+                    applications. Its combination</P>
+            </div>
+            <div>
+                <h4 style="font-style: italic; font-weight: normal;">Reviews</h4>
+            </div>
+        </div>
+        <div style="width: 25%;">
+            <div>
+                <h2 style="font-weight: normal;">MERN STACK DEVELOPMENT COURSE</h2>
+            </div>
+            <div>
+                <P>Java Full Stack Development is widely popular for building powerful, scalable, and enterprise-level
+                    applications. Its combination</P>
+            </div>
+            <div>
+                <h4 style="font-style: italic; font-weight: normal;">Reviews</h4>
+            </div>
+        </div>
+    </section>
+
+    <section style="display: flex; justify-content: space-evenly ;">
+        <div style="width: 25%;">
+            <div>
+                <h2 style="font-weight: normal;">WEB DEVELOPMENT COURSE</h2>
+            </div>
+            <div>
+                <P>Java Full Stack Development is widely popular for building powerful, scalable, and enterprise-level
+                    applications. Its combination</P>
+            </div>
+            <div>
+                <h4 style="font-style: italic; font-weight: normal;">Reviews</h4>
+            </div>
+        </div>
+        <div style="width: 25%;">
+            <div>
+                <h2 style="font-weight: normal;">DIGITAL MARKETING COURSE</h2>
+            </div>
+            <div>
+                <P>Java Full Stack Development is widely popular for building powerful, scalable, and enterprise-level
+                    applications. Its combination</P>
+            </div>
+            <div>
+                <h4 style="font-style: italic; font-weight: normal;">Reviews</h4>
+            </div>
+        </div>
+        <div style="width: 25%;">
+            <div>
+                <h2 style="font-weight: normal;">REACT NATIVE DEVELOPMENT COURSE</h2>
+            </div>
+            <div>
+                <P>Java Full Stack Development is widely popular for building powerful, scalable, and enterprise-level
+                    applications. Its combination</P>
+            </div>
+            <div>
+                <h4 style="font-style: italic; font-weight: normal;">Reviews</h4>
+            </div>
+        </div>
+        <div style="width: 25%;">
+            <div>
+                <h2 style="font-weight: normal;">ICONIC DEVELOPMENT COURSE</h2>
+            </div>
+            <div>
+                <P>Java Full Stack Development is widely popular for building powerful, scalable, and enterprise-level
+                    applications. Its combination</P>
+            </div>
+            <div>
+                <h4 style="font-style: italic; font-weight: normal;">Reviews</h4>
+            </div>
+        </div>
+    </section>
+
+    <h1 style="font-weight: normal;">RECENT ADDITIONS</h1>
+    <section style="display: flex; justify-content: space-evenly ;">
+        <div style="width: 25%;">
+            <div>
+                <h2 style="font-weight: normal;">UI DEVELOPMENT COURSE</h2>
+            </div>
+            <div>
+                <P>Java Full Stack Development is widely popular for building powerful, scalable, and enterprise-level
+                    applications. Its combination</P>
+            </div>
+            <div>
+                <h4 style="font-style: italic; font-weight: normal;">Reviews</h4>
+            </div>
+        </div>
+        <div style="width: 25%;">
+            <div>
+                <h2 style="font-weight: normal;">VUEJS DEVELOPMENT COURSE</h2>
+            </div>
+            <div>
+                <P>Java Full Stack Development is widely popular for building powerful, scalable, and enterprise-level
+                    applications. Its combination</P>
+            </div>
+            <div>
+                <h4 style="font-style: italic; font-weight: normal;">Reviews</h4>
+            </div>
+        </div>
+        <div style="width: 25%;">
+            <div>
+                <h2 style="font-weight: normal;">WORDPRESS DEVELOPMENT COURSE</h2>
+            </div>
+            <div>
+                <P>Java Full Stack Development is widely popular for building powerful, scalable, and enterprise-level
+                    applications. Its combination</P>
+            </div>
+            <div>
+                <h4 style="font-style: italic; font-weight: normal;">Reviews</h4>
+            </div>
+        </div>
+        <div style="width: 25%;">
+            <div>
+                <h2 style="font-weight: normal;">PYTHON DEVELOPMENT COURSE</h2>
+            </div>
+            <div>
+                <P>Java Full Stack Development is widely popular for building powerful, scalable, and enterprise-level
+                    applications. Its combination</P>
+            </div>
+            <div>
+                <h4 style="font-style: italic; font-weight: normal;">Reviews</h4>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h1 style="font-weight: normal; padding-left: 60px;">RECENT ADDITIONS</h1>
+
+        <div style="display: flex; justify-content: space-evenly;">
+            <div style="width: 20%;" class="shadow">
+                <div style=" height: 105px; background-color: aqua; text-align: center; display: flex;" class="hi">
+                    <div style="width: 25%; display: flex; justify-content: center; align-items: center;">
+                        <a href="" style="text-decoration: none; color: black;">
+                            <p style="font-size: 30px;"><i class="fa-brands fa-uikit"></i></p>
+                    </div>
+                    <div style="width: 75%; padding-top: 15px;">
+
+                        <p style="font-size: 20px;">UI</p>
+                        <p style="font-size: 20px;">DEVELOPMENT</p>
+                        <p style="font-size: 20px;">COURSE</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div style=" padding-left: 5px;">
+                    <p>UI developemnt course in bangalore, you will be able to master the concepts such as Css3, CSS,
+                        HTML,
+                        JavaScript, Bootstrap</p>
+                    <p style="border-bottom: 2px solid gray;"></p>
+                </div>
+                <div>
+                    <h4 style="font-weight: normal; font-style: italic;">REVIEWS</h4>
+                    <p><i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </p>
+                </div>
+            </div>
+
+            <div style="width: 20%;" class="shadow">
+                <div style=" height: 105px; background-color: aqua; text-align: center;" class="hi">
+                    <p style="font-size: 20px;">UI</p>
+                    <p style="font-size: 20px;">DEVELOPMENT</p>
+                    <p style="font-size: 20px;">COURSE</p>
+                </div>
+                <div style="padding-left: 5px;">
+                    <p>UI developemnt course in bangalore, you will be able to master the concepts such as Css3, CSS,
+                        HTML,
+                        JavaScript, Bootstrap</p>
+                    <p style="border-bottom: 2px solid gray;"></p>
+                </div>
+                <div>
+                    <h4 style="font-weight: normal; font-style: italic;">REVIEWS</h4>
+                    <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i></p>
+                </div>
+            </div>
+
+            <div style="width: 20%;" class="shadow">
+                <div style=" height: 105px; background-color: aqua; text-align: center;" class="hi">
+                    <p style="font-size: 20px;">UI</p>
+                    <p style="font-size: 20px;">DEVELOPMENT</p>
+                    <p style="font-size: 20px;">COURSE</p>
+                </div>
+                <div style="padding-left: 5px;">
+                    <p>UI developemnt course in bangalore, you will be able to master the concepts such as Css3, CSS,
+                        HTML,
+                        JavaScript, Bootstrap</p>
+                    <p style="border-bottom: 2px solid gray;"></p>
+                </div>
+                <div>
+                    <h4 style="font-weight: normal; font-style: italic;">REVIEWS</h4>
+                    <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i></p>
+                </div>
+            </div>
+
+            <div style="width: 20%;" class="shadow">
+                <div style=" height: 105px; background-color: aqua; text-align: center;" class="hi">
+                    <p style="font-size: 20px;">UI</p>
+                    <p style="font-size: 20px;">DEVELOPMENT</p>
+                    <p style="font-size: 20px;">COURSE</p>
+                </div>
+                <div style="padding-left: 5px;">
+                    <p>UI developemnt course in bangalore, you will be able to master the concepts such as Css3, CSS,
+                        HTML,
+                        JavaScript, Bootstrap</p>
+                    <p style="border-bottom: 2px solid gray;"></p>
+                </div>
+                <div>
+                    <h4 style="font-weight: normal; font-style: italic;">REVIEWS</h4>
+                    <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <h1 style="font-weight: normal;">AcheiversIT Students Now At Top Companies</h1>
+    <h1 style="font-weight: normal;">Reviews from Students Worldwide for Our IT Courses</h1>
+    <a href="" style="text-decoration: none; display: flex; justify-content: center;">VIEW ALL REVIWES ></a>
+
+    <section style="background-color: rgb(83, 195, 240); height: 150px; width: 100%;  ">
+        <div style="height: 50%; display: flex; justify-content: center;">
+            <p style="font-size: 27.5px; display: flex; justify-content: center;">Enroll, Learn, Grow, Repeat! Get ready
+                to achieve your learning goals with AchieversIT</p>
+        </div>
+        <div style="height: 50%; text-align: center;">
+            <button><a href=""
+                    style="display: flex; justify-content: center; text-decoration: none; color: rgb(36, 36, 244);">CONTACT
+                    US</a></button>
+        </div>
+    </section>
+
+    <section>
+        <h1 style="font-weight: normal; text-align: center; background-color: gray; height: 350px;">AchieversIT's Proven
+            Formula for Your Dream Career</h1>
+    </section>
+
+    <section style="background-color: gray; height: 275px;">
+        <h1 style="font-weight: normal; text-align: center;">Why AchieversIT is the #1 Choice for IT Career Success</h1>
+        <p style="text-align: center; font-size: 22.5px;">
+            More people train with AcheiversIT because of ourcommitment to quality, Placement Support, and Real-time
+            Training.
+        </p>
+        <div style="display: flex; justify-content: center;">
+            <div style="width: 20%; background-color: white; text-align: center; margin-right: 20px;">
+                <h1>135+</h1>
+                <p>TRENDING COURSES</p>
+            </div>
+            <div style="width: 20%; background-color: white; text-align: center; margin-right: 20px;">
+                <h1>135+</h1>
+                <p>TRENDING COURSES</p>
+            </div>
+            <div style="width: 20%; background-color: white; text-align: center; margin-right: 20px;">
+                <h1>135+</h1>
+                <p>TRENDING COURSES</p>
+            </div>
+            <div style="width: 20%; background-color: white; text-align: center; margin-right: 20px;">
+                <h1>135+</h1>
+                <p>TRENDING COURSES</p>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <h1 style="font-weight: normal;">Our Trainers From</h1>
+    <section>
+        <div style="display: flex; justify-content: center;  margin-bottom: 20px;">
+            <div
+                style="width: 20%; height: 150px;  background-color: rgb(210, 209, 209); text-align: center; margin-right: 15px; display: flex; align-items: center; justify-content: center;">
+                <h1 style="font-weight: normal;">Cognizant</h1>
+            </div>
+            <div
+                style="width: 20%; background-color: rgb(210, 209, 209); text-align: center; margin-right: 15px; display: flex; align-items: center; justify-content: center;">
+                <h1 style="font-weight: normal;">Cognizant</h1>
+            </div>
+            <div
+                style="width: 20%; background-color: rgb(210, 209, 209); text-align: center; margin-right: 15px; display: flex; align-items: center; justify-content: center;">
+                <h1 style="font-weight: normal;">Cognizant</h1>
+            </div>
+            <div
+                style="width: 20%; background-color: rgb(210, 209, 209); text-align: center; margin-right: 15px;  display: flex; align-items: center; justify-content: center;">
+                <h1 style="font-weight: normal;">Cognizant</h1>
+            </div>
+
+        </div>
+        <div style="display: flex; justify-content: center; margin-bottom: 20px;">
+            <div
+                style="width: 20%; height: 150px; background-color: rgb(210, 209, 209); text-align: center; margin-right: 15px; display: flex; align-items: center; justify-content: center; ">
+                <h1 style="font-weight: normal;">Cognizant</h1>
+            </div>
+            <div
+                style="width: 20%; background-color: rgb(210, 209, 209); text-align: center; margin-right: 15px; display: flex; align-items: center; justify-content: center;">
+                <h1 style="font-weight: normal;">Cognizant</h1>
+            </div>
+            <div
+                style="width: 20%; background-color: rgb(210, 209, 209); text-align: center; margin-right: 15px; display: flex; align-items: center; justify-content: center;">
+                <h1 style="font-weight: normal;">Cognizant</h1>
+            </div>
+            <div
+                style="width: 20%; background-color: rgb(210, 209, 209); text-align: center; margin-right: 15px; display: flex; align-items: center; justify-content: center;">
+                <h1 style="font-weight: normal;">Cognizant</h1>
+            </div>
+
+        </div>
+        <div style="display: flex; justify-content: center; margin-bottom: 20px;">
+            <div
+                style="width: 20%; height: 150px; background-color: rgb(210, 209, 209); text-align: center; margin-right: 15px; display: flex; align-items: center; justify-content: center;">
+                <h1 style="font-weight: normal;">Cognizant</h1>
+            </div>
+            <div
+                style="width: 20%; background-color: rgb(210, 209, 209); text-align: center; margin-right: 15px; display: flex; align-items: center; justify-content: center;">
+                <h1 style="font-weight: normal;">Cognizant</h1>
+            </div>
+            <div
+                style="width: 20%; background-color: rgb(210, 209, 209); text-align: center; margin-right: 15px; display: flex; align-items: center; justify-content: center;">
+                <h1 style="font-weight: normal;">Cognizant</h1>
+            </div>
+            <div
+                style="width: 20%; background-color: rgb(210, 209, 209); text-align: center; margin-right: 15px; display: flex; align-items: center; justify-content: center;">
+                <h1 style="font-weight: normal;">Cognizant</h1>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section style="height: 350px;">
+        <h1 style="font-weight: normal;">AchieversIT Process</h1>
+
+    </section>
+
+    <section>
+        <h1 style="font-weight: normal;">Latest Job Openings</h1>
+        <div style="display: flex; justify-content: center; margin-bottom: 40px; ">
+            <div style="width: 40%; height: 150px; background-color: rgb(211, 208, 208); margin-right: 40px; ">
+                <h1 style="font-weight: normal; ">Front End Developer - Angular js,Nodejs</h1>
+                <p style="font-size: 25px;">Location : Bangalore</p>
+            </div>
+            <div style="width: 40%; height: 150px; background-color: rgb(211, 208, 208); margin-left: 40px; ">
+                <h1 style="font-weight: normal; ">Front End Developer - Angular js,Nodejs</h1>
+                <p style="font-size: 25px;">Location : Bangalore</p>
+            </div>
+        </div>
+        <div style="display: flex; justify-content: center; margin-bottom: 40px; ">
+            <div style="width: 40%; height: 150px; background-color: rgb(211, 208, 208); margin-right: 40px; ">
+                <h1 style="font-weight: normal; ">Front End Developer - Angular js,Nodejs</h1>
+                <p style="font-size: 25px;">Location : Bangalore</p>
+            </div>
+            <div style="width: 40%; height: 150px; background-color: rgb(211, 208, 208); margin-left: 40px; ">
+                <h1 style="font-weight: normal; ">Front End Developer - Angular js,Nodejs</h1>
+                <p style="font-size: 25px;">Location : Bangalore</p>
+            </div>
+        </div>
+        <div style="display: flex; justify-content: center; margin-bottom: 40px; ">
+            <div style="width: 40%; height: 150px; background-color: rgb(211, 208, 208); margin-right: 40px; ">
+                <h1 style="font-weight: normal; ">Front End Developer - Angular js,Nodejs</h1>
+                <p style="font-size: 25px;">Location : Bangalore</p>
+            </div>
+            <div style="width: 40%; height: 150px; background-color: rgb(211, 208, 208); margin-left: 40px; ">
+                <h1 style="font-weight: normal; ">Front End Developer - Angular js,Nodejs</h1>
+                <p style="font-size: 25px;">Location : Bangalore</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section style="height: 500px;">
+        <h1 style="font-weight: normal; padding-left: 150px;">AcheiversIT Students Now At Top Companies</h1>
+    </section>
+
+    <section>
+        <h1 style="font-weight: normal; padding-left: 60px;">Reviews from Students Worldwide for Our IT Courses</h1>
+        <div style="display: flex; justify-content: space-evenly;">
+            <div style="padding-top: 50px;">
+                <button style="width: 60px; height: 60px; font-size: 30px;"><code> < </code>
+                </button>
+            </div>
+            <div style="width: 20%;">
+                <h2 style="font-weight: normal;">UI DEVELOPMENT COURSE</h2>
+                <P>UI developemnt course in bangalore, you will be able to master the concepts such as Css3, CSS, HTML,
+                    JavaScript, Bootstrap</P>
+            </div>
+            <div style="width: 20%;">
+                <h2 style="font-weight: normal;">UI DEVELOPMENT COURSE</h2>
+                <P>UI developemnt course in bangalore, you will be able to master the concepts such as Css3, CSS, HTML,
+                    JavaScript, Bootstrap</P>
+            </div>
+            <div style="width: 20%;">
+                <h2 style="font-weight: normal;">UI DEVELOPMENT COURSE</h2>
+                <P>UI developemnt course in bangalore, you will be able to master the concepts such as Css3, CSS, HTML,
+                    JavaScript, Bootstrap</P>
+            </div>
+            <div style="display: flex; justify-content: space-evenly;">
+                <div style="padding-top: 50px;">
+                    <button style="width: 60px; height: 60px; font-size: 30px;"> > </button>
+                </div>
+            </div>
+    </section><br>
+
+    <a href=""
+        style="text-decoration: none; font-weight: bolder; font-size: 25px; display: flex; justify-content: center; color: rgb(35, 84, 231);"><code>VIEW ALL REVIEWS <code>></code></code></a>
+
+    <section style="height: 150px; background-color: gray; ">
+        <div style="display: flex; justify-content: center;">
+            <h2><code style="font-size: 25px;">Enroll,Learn,Grow,Repeat! Get ready to achieve your learning goals with AchieversIT
+</code></h2>
+        </div>
+        <div style="display: flex; justify-content: center;">
+
+          <button
+                    style="width: 500px; height: 50px; background-color: rgb(235, 146, 13);" class="button">CONTACT
+                    US</button>
+
+                    <button>Contact Us</button>
+
+        </div>
+    </section><br><br>
+
+    <footer style="display: flex; background-color: black; color: rgb(141, 143, 143); justify-content: space-around;">
+        <div style="width: 25%;">
+            <img src="https://www.achieversit.com/assets/images/AIT-white.jpg" alt="footer logo">
+            <p style="color: rgb(121, 129, 136);">AchieversIT - Provides a wide group of opportunities for freshers and
+                Experienced candidate who can develop their skills and build their career opportunities across multiple
+                Companies.</p>
+        </div>
+        <div style="width: 25%;">
+            <h3>COMPANY</h3>
+            <!-- <p style="color: aliceblue; font-size: 17.5px;">Home</p>
+        <p style="color: aliceblue; font-size: 17.5px;">Placements</p>
+        <p style="color: aliceblue; font-size: 17.5px;">Corporate Training</p>
+        <p style="color: aliceblue; font-size: 17.5px;">Contact Us</p> -->
+            <ul style="font-size: 17.5px; list-style-type: circle; ">
+                <li><a href="" style="text-decoration: none; color: white;">Home</a></li><br>
+                <li><a href="" style="text-decoration: none; color: white;">Placements</a></li><br>
+                <li><a href="" style="text-decoration: none; color: white;">Corporate Training</a></li><br>
+                <li><a href="" style="text-decoration: none; color: white;">Contact Us</a></li>
+            </ul>
+
+        </div>
+        <div style="width: 25%;">
+            <h3>TRENDING COURSES</h3>
+            <!-- <p style="color: aliceblue; font-size: 17.5px;">UI Development Course</p>
+            <p style="color: aliceblue; font-size: 17.5px;">Angular JS Course</p>
+            <p style="color: aliceblue; font-size: 17.5px;">React JS Course</p>
+            <p style="color: aliceblue; font-size: 17.5px;">Digital Marketing Course</p>
+            <p style="color: aliceblue; font-size: 17.5px;">Python Course</p> -->
+            <ul style="font-size: 17.5px; list-style-type: circle; ">
+                <li><a href="" style="text-decoration: none; color: white;">UI Development Course</a></li><br>
+                <li><a href="" style="text-decoration: none; color: white;">Angular JS Course</a></li><br>
+                <li><a href="" style="text-decoration: none; color: white;">React JS Course</a></li><br>
+                <li><a href="" style="text-decoration: none; color: white;">Digital Marketing Course</a></li><br>
+                <li><a href="" style="text-decoration: none; color: white;">Python Course</a></li>
+            </ul>
+
+        </div>
+        <div style="width: 25%;">
+            <h3>CONTACT INFO</h3>
+            <p style="color: aliceblue; font-size: 17.5px;"><i class="fa-solid fa-location-dot"></i>#63, 1st Floor, 16th
+                Main, 8th Cross,BTM 1st Stage, Bangalore, India - 560029</p>
+            <p style="color: aliceblue; font-size: 17.5px;"><i class="fa-solid fa-phone"></i>India: +91 8431-040-457</p>
+            <p style="color: aliceblue; font-size: 17.5px;"><i class="fa-solid fa-envelope"></i>info@achieversit.com</p>
+        </div>
+    </footer>
+</body>
+
+</html>
