@@ -1,0 +1,8 @@
+.color:hover{
+    color: blue;
+    background-color: red;
+}
+
+.hi{
+    background-image: url(../../);
+}

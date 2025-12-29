@@ -1,0 +1,3 @@
+.even li:nth-child(even){
+    color: red;
+}

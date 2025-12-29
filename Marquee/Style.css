@@ -1,0 +1,15 @@
+.Card{
+    width: 200px;
+    height: 200px;
+    background-color: wheat;
+    border-radius: 10px;
+}
+
+.Text{
+    text-align: center;
+}
+
+.Parent{
+    display: flex;
+    justify-content: space-evenly;
+}

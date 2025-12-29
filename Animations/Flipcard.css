@@ -1,0 +1,44 @@
+.card{
+    width: 300px;
+    height: 200px;
+    right: 30px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 1s;
+    /* transition-timing-function: ease-in; */
+}
+
+.Front, .Back{
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Front{
+    background-color: gold;
+}
+
+.Back{
+    background-color: silver;
+    transform: rotateY(180deg);
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+}
+
+.Para{
+    font-size: 40px;
+    text-align: center;
+}
+
+.parent{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+

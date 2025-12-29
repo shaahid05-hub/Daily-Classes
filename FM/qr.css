@@ -1,0 +1,14 @@
+.Box{
+    width: 400px;
+    height: 500px;
+    background-color: whitesmoke;
+}
+
+.dj{
+    display: flex;
+    justify-content: center;
+}
+
+.body{
+    background-color: rgb(188, 231, 248);
+}

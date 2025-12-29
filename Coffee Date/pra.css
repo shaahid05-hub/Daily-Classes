@@ -1,0 +1,16 @@
+.bell{
+    clip-path: circle(50% at 50% 50%);
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 10px;
+    left: 60px;
+
+    
+}
+
+.up{
+    color: white;
+    text-align: center;
+}
