@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .front,.back{
+            width: 300px;
+            height: 300px;
+            backface-visibility: hidden;
+            position: absolute;
+        }
+
+        .front{
+            background-color: red;
+        }
+
+        .back{
+            background-color: blue;
+            transform: rotateY(180deg);
+        }
+
+        .parent{
+            transform-style: preserve-3d;
+            width: 300px;
+            height: 300px;
+            position: relative;
+            transition: 1s;
+            /* border: 1px solid black;
+            padding: 10px; */
+        }
+
+        .parent:hover{
+            transform: rotateY(180deg);
+        }
+
+        .image{
+            width: 300px;
+            height: 300px;
+            background-position: center;
+            background-size: cover;
+        }
+
+        body{
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .menu{
+            width: 300px;
+            height: 200px;
+            background-color: wheat;
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        .one{
+            border: 1px solid black;
+            padding: 10px;
+            background-color: rgb(244, 178, 54);
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    
+
+    <script src="./index.js"></script>
+</body>
+</html>
