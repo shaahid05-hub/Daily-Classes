@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .view{
+            width: 200px;
+            height: 200px;
+            perspective: 1300px;
+        }
+        .cube{
+            position: relative;
+            width: 200px;
+            height: 200px;
+            transform-style: preserve-3d;
+            transform: rotateX(-30deg) rotateY(45deg);
+            animation: cube 10s infinite linear;
+        }
+        .card{
+            width: 200px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            border: 1px solid black;
+            /* background: rgba(2, 2, 2, 0.5); */
+        }
+        .front{
+            background-color: red;
+            transform: translateZ(100px);
+        }
+        .back{
+            background-color: green;
+            transform: rotateY(180deg) translateZ(100px);
+        }
+        .right{
+            background-color: blue;
+            transform: rotateY(90deg) translateZ(100px) ;
+        }
+        .left{
+            background-color: chartreuse;
+            transform: rotateY(-90deg) translateZ(100px) ;
+        }
+        .top{
+            background-color: darkmagenta;
+            transform: rotateX(90deg) translateZ(100px) ;
+        }
+        .bottom{
+            background-color: yellow;
+            transform: rotateX(-90deg) translateZ(100px) ;
+        }
+        @keyframes cube{
+            0%{
+                transform: translate(0,0) rotateX(0deg) rotateY(0deg);
+            }
+            25%{
+                transform: translate(500px,600px) rotateX(180deg) rotateY(180deg);
+            }
+            50%{
+                transform: translate(1000px,0px) rotateX(0deg) rotateY(180deg);
+            }
+            75%{
+                transform: translate(1570px,600px) rotateX(180deg) rotateY(180deg);
+            }
+            100%{
+                transform: translate(0,0) rotateX(0deg) rotateY(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="view">
+        <div class="cube">
+            <div class="card front">Front</div>
+            <div class="card back">Back</div>
+            <div class="card right">Right</div>
+            <div class="card left">Left</div>
+            <div class="card top">Top</div>
+            <div class="card bottom">Bottom</div>
+        </div>
+    </div>
+</body>
+</html>
