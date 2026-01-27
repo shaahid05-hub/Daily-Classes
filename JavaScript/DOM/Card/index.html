@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .text{
+            font-size: 50px;
+            text-align: center;
+        }
+        #btn{
+            font-size: 20px;
+            padding: 0px 10px;
+            display: flex;
+            justify-self: center;
+        }
+        .card{
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+            margin: 5px;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #parent{
+            display: flex;
+            justify-content: center;
+            gap: 20px; 
+            flex-wrap: wrap;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    
+    <p class="text">Acheivers IT</p>
+    <button id="btn" onclick=genC()>Use me</button>
+    <div id="parent"></div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
