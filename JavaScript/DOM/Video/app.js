@@ -1,0 +1,15 @@
+let img = document.createElement('img')
+img.setAttribute('class','image')
+img.setAttribute('src','https://images.pexels.com/photos/34935442/pexels-photo-34935442.jpeg')
+document.body.append(img)
+
+let audio = document.createElement('audio')
+audio.setAttribute('src','./epic.mp3')
+audio.setAttribute('controls','')
+document.body.append(audio)
+
+let video = document.createElement('video')
+video.setAttribute('class','vid')
+video.setAttribute('src','https://www.pexels.com/download/video/35510815/')
+video.setAttribute('controls','')
+document.body.append(video)
