@@ -16,12 +16,21 @@ let a = [
     {img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQooEgmW96Hlb_ukjfr1YYmr_ZdLW6Oz3lBPOpTgzH2kXD0hvT4yO-W&usqp=CAE&s" , name: "Baahubali", boxOffice: "630 Crore"}
 ]
 
-a.indexOf("Salaar")
+let b = [
+    {img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL7Iah93loIO9sHfjfd09Qu9ZxZNUZ1L1B3HREJ8-WStQgImJhgvTA&usqp=CAE&s", name:"Devara" , boxOffice: "Unknown"},
+    {img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwFtD5q43Sp3xe0rNAghmehBL5CIg2MCepMSF3es1E3f-ECVhq-ToY&usqp=CAE&s", name:"RRR" , boxOffice: "1350 Crore"},
+    {img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP8KHzO8P-9wCTU2RdQAIn_N_qIHQf3fPdxwtamedv7SjinPNgQu4w&usqp=CAE&s", name:"Rangasthalam" , boxOffice: "215 Crore"},
+    {img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtF-TUp7rkuviuXJGR-9w9RmuC7Qn3y4YDVF7nwdPVG9_rgtUE9dCG&usqp=CAE&s", name:"Syeraa" , boxOffice: "250 Crore"},
+    {img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnZvPDau3GrI7aMHN3N_NjCqb_3fUATE6PG7RUnBYhpQ_blESOi-S1&usqp=CAE&s", name:"Sankranthiki Vasthunnam" , boxOffice: "285 Crore"}
+]
+
+// a = a.concat(b)
+
 
 for (let i = 0; i < a.length; i++) {
     document.body.innerHTML += `
         <div class="card">
-            <div class>
+            <div>
                 <img src="${a[i].img}" class="image">
             </div>
             <div class="matter">
