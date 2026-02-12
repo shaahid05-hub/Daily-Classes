@@ -5,17 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body{
+           
+            height: 90vh;
+            display: grid;
+            place-items:center ;
+            background-color: black;
+        }
         .view{
             width: 200px;
             height: 200px;
-            perspective: 1300px;
+             perspective: 800px;
         }
         .cube{
             position: relative;
             width: 200px;
             height: 200px;
             transform-style: preserve-3d;
-            transform: rotateX(-30deg) rotateY(45deg);
+            /* transform: rotateX(-30deg) rotateY(45deg); */
             animation: cube 10s infinite linear;
         }
         .card{
@@ -53,21 +60,26 @@
             transform: rotateX(-90deg) translateZ(100px) ;
         }
         @keyframes cube{
-            0%{
-                transform: translate(0,0) rotateX(0deg) rotateY(0deg);
+           0%{
+                /* transform:  translate(0,0) rotateX(-30deg) rotateY(0deg); */
+                  transform: rotateX(45deg)  rotateY(45deg);
             }
             25%{
-                transform: translate(500px,600px) rotateX(180deg) rotateY(180deg);
+                /* transform:  translate(500px,600px) rotateX(30deg) rotateY(90deg); */
+                  transform: rotateX(-45deg)  rotateY(45deg);
             }
             50%{
-                transform: translate(1000px,0px) rotateX(0deg) rotateY(180deg);
+                /* transform:  translate(1000px,0px) rotateX(-30deg) rotateY(180deg); */
+                  transform: rotateX(-45deg)  rotateY(-45deg);
             }
             75%{
-                transform: translate(1570px,600px) rotateX(180deg) rotateY(180deg);
+                /* transform:  translate(1500px,600px) rotateX(30deg) rotateY(270deg); */
+                  transform: rotateX(45deg)  rotateY(-45deg);
             }
             100%{
-                transform: translate(0,0) rotateX(0deg) rotateY(360deg);
-            }
+                /* transform:  translate(0px,0px) rotateX(-30deg) rotateY(360deg); */
+                  transform: rotateX(45deg)  rotateY(45deg);
+            } 
         }
     </style>
 </head>
