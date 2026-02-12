@@ -37,11 +37,30 @@
 //     }
 // })
 
-let inp = document.getElementById('inp')
-inp.addEventListener('input',()=>{
-    if (inp.value.length <= 4) {
-    inp.classList.add('border')
-} else {
-    inp.classList.add('border1')
-}
+// 6th
+// let inp = document.getElementById('inp')
+// inp.addEventListener('input',()=>{
+//     if (inp.value.length <= 4) {
+//     inp.classList.add('border')
+// } else {
+//     inp.classList.add('border1')
+// }
+// })
+
+let icon = document.getElementById('icon')
+let count = document.getElementById('count')
+let text = document.getElementById('text')
+icon.addEventListener('click',()=>{
+    icon.classList.toggle('fa-solid')
+    icon.classList.toggle('fa-regular')
+    icon.classList.toggle('filled')
+    if (icon.classList.contains('filled')) {
+        count.textContent = '1'
+        text.textContent = 'Thanks'
+    } else {
+       count.textContent = '0' 
+       text.textContent = 'Like chey beyyy'
+    }
 })
+
+ 

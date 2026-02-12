@@ -5,29 +5,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-        .highlight{
+        .highlight {
             color: red;
         }
-        #image{
+
+        #image {
             width: 100%;
             height: 500px;
             background-size: cover;
         }
-        body{
+
+        body {
             transition: background-color 1s ease;
         }
-        body.dark-mode{
+
+        body.dark-mode {
             background-color: black;
         }
-        .border{
+
+        .border {
             outline: 4px solid red;
 
         }
-        .border1{
+
+        .border1 {
             outline: 4px solid green;
         }
-        
+
+        #icon {
+            font-size: 50px;
+            color: black;
+            cursor: pointer;
+        }
+
+        #icon.filled {
+            color: red;
+        }
     </style>
 </head>
 
@@ -42,7 +59,7 @@
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed laudantium, vero quod ab corporis velit architecto.
         Eum vel harum atque?</p> -->
 
-    <!-- 2nd --> 
+    <!-- 2nd -->
     <!-- <span id="count">
         <button></button>
         <button></button>
@@ -70,8 +87,17 @@
     <!-- 5th
     <button id="btn">Switch to dark mode</button> -->
 
+    <!-- 6th -->
+    <!-- <input type="text" name="" id="inp" style="width: 200px; height: 30px; font-size: 25px;"> -->
 
-    <input type="text" name="" id="inp" style="width: 200px; height: 30px; font-size: 25px;">
+
+    <!-- 7th -->
+    <div style="text-align: center; margin-top: 300px;">
+        <i class="fa-regular fa-heart" id="icon"></i>
+        <p id="count"></p>
+        <h2 id="text">Like chey beyyy</h2>
+    </div>
+
 
 
     <script src="./app.js"></script>
