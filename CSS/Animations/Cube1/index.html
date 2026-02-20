@@ -5,16 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body{
+                /* perspective: 800px; */
+                display: grid;
+                place-items: center;
+                height: 90vh;
+                 perspective: 200px;
+                 
+        }
         .view{
             width: 200px;
             height: 200px;
-            perspective: 800px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+         
         }
-        .cube{
+        .cube{ 
             width: 200px;
             height: 200px;
             position: relative;
-            /* background-color: black; */
             transform-style: preserve-3d;
             animation: cube 10s infinite linear;
         }
@@ -26,46 +36,58 @@
             align-items: center;
             position: absolute;
         }
+
         .front{
             background-color: red;
             transform: translateZ(100px);
         }
         .back{
             background-color: blue;
-            transform: rotateY(180deg) translateZ(100px);
+            transform: translateZ(-100px);
         }
         .right{
-            background-color: green;
-            transform: rotateY(90deg) translateZ(100px);
+            background-color: orange;
+               transform: rotateY(90deg) translateZ(100px);
         }
         .left{
-            background-color: orange;
-            transform: rotateY(-90deg) translateZ(100px);
+            background-color: greenyellow;
+              /* transform: rotateY(-63deg) translateX(-120px); */
+               transform: rotateY(-90deg) translateZ(100px);
         }
         .top{
             background-color: blueviolet;
-            transform: rotateX(90deg) translateZ(100px);
+          /* transform: rotateX(16deg) translateY(-120px); */
+           transform: rotateX(90deg) translateZ(100px);
         }
         .bottom{
             background-color: pink;
-            transform: rotateX(-90deg) translateZ(100px);
+            /* transform: rotateX(16deg) translateY(120px); */
+             transform: rotateX(90deg) translateZ(-100px);
+             
         }
         @keyframes cube{
             0%{
-                transform:  translate(0,0) rotateX(-30deg) rotateY(0deg);
+                /* transform:  translate(0,0) rotateX(-30deg) rotateY(0deg); */
+                  transform: rotateX(45deg)  rotateY(45deg);
             }
             25%{
-                transform:  translate(500px,600px) rotateX(30deg) rotateY(90deg);
+                /* transform:  translate(500px,600px) rotateX(30deg) rotateY(90deg); */
+                  transform: rotateX(-45deg)  rotateY(45deg);
             }
             50%{
-                transform:  translate(1000px,0px) rotateX(-30deg) rotateY(180deg);
+                /* transform:  translate(1000px,0px) rotateX(-30deg) rotateY(180deg); */
+                  transform: rotateX(-45deg)  rotateY(-45deg);
             }
             75%{
-                transform:  translate(1500px,600px) rotateX(30deg) rotateY(270deg);
+                /* transform:  translate(1500px,600px) rotateX(30deg) rotateY(270deg); */
+                  transform: rotateX(45deg)  rotateY(-45deg);
             }
             100%{
-                transform:  translate(0px,0px) rotateX(-30deg) rotateY(360deg);
+                /* transform:  translate(0px,0px) rotateX(-30deg) rotateY(360deg); */
+                  transform: rotateX(45deg)  rotateY(45deg);
             } 
+
+      
         }
     </style>
 </head>
