@@ -14,7 +14,7 @@ document.addEventListener('keydown',(e)=>{
             break;
         case 'd':
             // console.log('you pressed ' +e.key);
-            break;
+            break; 
         case 'e':
             // console.log('you pressed ' +e.key);
             break;           
