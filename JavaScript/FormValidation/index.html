@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <style>
+        .cont{
+            display: flex;
+            justify-content: center;
+        }
+        #btn{
+            justify-items: center;
+            padding: 10px 15px;
+            background-color: orange;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="cont">
+    <form action="http://www.achieversit.com/">
+        <label for="">USERNAME</label>
+        <input type="text" placeholder="UserName" id="UserName"><br><br>
+        <label for="">PASSWORD</label>
+        <input type="password" placeholder="Password" id="Password"><br><br>
+        <label for="">PHONE</label>
+        <input type="text" placeholder="Phone" id="Phone"><br><br>
+        <label for="">MAIL ID</label>
+        <input type="text" placeholder="Mail" id="Mail"><br><br>
+        <label for="">AADHAR</label>
+        <input type="text" placeholder="Aadhar" id="Aadhar"><br><br>
+        <label for="">PAN</label>
+        <input type="text" placeholder="Pan" id="Pan"><br><br>
+        <button id="btn" onclick=" return trigger()">Register</button>
+    </form>
+    </div>
+
+
+    <script src="./app.js"></script>
+</body>
+</html>
